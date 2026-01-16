@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>panel de estadisitcas alumnos</title>
+</head>
+<style>
+    img{
+        max-width:5%; vertical-align:top;
+    }
+    table {
+        border-collapse: collapse;
+        border: 1px solid #333;
+        
+    }
+    td,th {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+</style>
+<body>
+    <main>
+        <nav>
+            <a href="#nombre">ir al formulario</a><br>
+            <a href="https://www.w3.org/">documentación oficial W3C</a><br>
+
+        </nav>
+    </main>
+    <section >
+        <h3>Tabla con estadísticas:</h3>
+        <table id="tabla_estadisticas">
+            <thead>
+                <tr><th colspan="5" >estadisticas</th></tr>
+                <tr><th>asignatura</th><th>nota 1</th><th>nota 2</th><th>nota 3</th><th>nota final</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>DAW</td><td>8</td><td>9</td><td>10</td><td>9</td></tr>
+                <tr><td>DWES</td><td>8</td><td>9</td><td>10</td><td>9</td></tr>
+                <tr><td>FOL</td><td>8</td><td>9</td><td>10</td><td>9</td></tr>
+                <tr><td>DISEÑO</td><td>8</td><td>9</td><td>10</td><td>9</td></tr>
+            </tbody>
+            <tfoot>
+                <tr ><td rowspan="2">calculo media finales</td><td colspan="3">medias finales</td><td>9</td></tr>
+                <tr><td colspan="3">nota ponderada 80%</td><td>7,2</td></tr>
+            
+            </tfoot>
+        </table>
+    </section>
+    <br><br>
+    <section>
+        <h3>Formulario de registro de estudiante:</h3>
+        <form method="post" action="">
+            <input type="text" id="nombre" placeholder="Nombre"><br>
+            <input type="text" id="apellidos" placeholder="Apellidos"><br>
+            <input type="text" id="curso" placeholder="Cursso"><br>
+            <input type="text" id="mail" placeholder="Mail"><br>
+            <input type="text" id="especialidad" placeholder="Nombre"><br>
+            Acepto política de datos.
+            <input type="checkbox"><br>
+            <input type="submit" name="Enviar" value="Enviar">
+        </form>
+    </section>
+        <figure>
+            <img src="escudo.jpg" alt="Logo">
+        </figure>
+</body>
+</html>

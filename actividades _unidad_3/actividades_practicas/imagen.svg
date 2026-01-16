@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400" role="img" aria-label="Logo simple: sol, colinas y texto Mi SVG">
+  <title>Mi SVG — Sol y colinas</title>
+  <desc>Imagen SVG generada: sol estilizado sobre colinas y texto "Mi SVG".</desc>
+
+  <!-- Fondo -->
+  <rect width="100%" height="100%" fill="#f7fbff"/>
+
+  <!-- Colinas -->
+  <path d="M0 260 Q150 180 300 240 T600 240 T800 220 L800 400 L0 400 Z" fill="#b3e6a1"/>
+  <path d="M0 300 Q200 230 400 290 T800 280 L800 400 L0 400 Z" fill="#8fd36b" opacity="0.9"/>
+
+  <!-- Sol (con rayos) -->
+  <g transform="translate(620,80)">
+    <circle r="44" fill="#FFD166"/>
+    <g stroke="#FFD166" stroke-width="6" stroke-linecap="round">
+      <line x1="-80" y1="0" x2="-110" y2="0"/>
+      <line x1="80" y1="0" x2="110" y2="0"/>
+      <line x1="0" y1="-80" x2="0" y2="-110"/>
+      <line x1="0" y1="80" x2="0" y2="110"/>
+      <line x1="-56" y1="-56" x2="-80" y2="-80"/>
+      <line x1="56" y1="-56" x2="80" y2="-80"/>
+      <line x1="-56" y1="56" x2="-80" y2="80"/>
+      <line x1="56" y1="56" x2="80" y2="80"/>
+    </g>
+  </g>
+
+  <!-- Camino o río estilizado -->
+  <path d="M0 350 C150 320 250 360 400 340 S650 330 800 350 L800 400 L0 400 Z" fill="#9fd3ff" opacity="0.6"/>
+
+  <!-- Texto -->
+  <text x="40" y="130" font-family="Verdana, Arial, sans-serif" font-size="48" fill="#05668d">Mi SVG</text>
+  <text x="40" y="170" font-family="Verdana, Arial, sans-serif" font-size="18" fill="#04658f" opacity="0.8">Sol — Colinas — Demo</text>
+
+  <!-- Pequeñas decoraciones: pájaro -->
+  <g fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" transform="translate(520,140) scale(0.9)">
+    <path d="M0 0 q10 -10 20 0" />
+    <path d="M20 0 q10 -10 20 0" />
+  </g>
+
+</svg>

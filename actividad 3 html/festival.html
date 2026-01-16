@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E3 Gaming - Los Santos</title>
+</head>
+<style>
+    img{
+        max-width:200px;
+        vertical-align:top;
+    }
+    table {
+        border-collapse: collapse;
+        border: 1px solid #333;
+        width: 100%; 
+    }
+    td,th {
+        border: 1px solid #333;
+        padding: 8px;
+        text-align: center;
+    }
+</style>
+<body>
+    <header>
+        <h1>E3 Gaming</h1>
+        <h3>¡El festival de videojuegos más esperado del sur!</h3>
+        <h4>Fecha del Evento: 18 de Diciembre de 2025</h4>
+        <figure>
+            <img src="gta.jpg" alt="Mapa de ubicacion en Sandy Shores">
+            <figcaption>Ubicación: Sandy Shores Aeródromo, Blaine County, Los Santos</figcaption>
+        </figure>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#informacion">Información</a></li>
+            <li><a href="#horarios">Horarios</a></li>
+            <li><a href="#entradas">Entradas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <section id="informacion">
+        <h3>Información del evento:</h3>
+        <p>E3 Gaming es el punto de encuentro definitivo para la comunidad gamer de Los Santos. Celebraremos el cierre del año 2025 con las últimas novedades en hardware, lanzamientos exclusivos y la oportunidad de probar consolas de Realidad Virtual de próxima generación. ¡Prepárate para torneos, charlas con desarrolladores y muchas sorpresas! Tendrás acceso a tres grandes áreas temáticas: Ordenadores, Consolas y Pruebas VR.</p>
+        <h5>Características destacadas</h5>
+        <ul>
+            <li>Acceso a más de 50 estaciones de juego de PC de alto rendimiento.</li>
+            <li>Zona exclusiva con las consolas más nuevas del mercado.</li>
+            <li>Torneo oficial de eSports con un premio de 5,000$.</li>
+            <li>Sesiones de prueba de realidad virtual (VR) inmersivas.</li>
+        </ul>
+    </section>
+    <section id="horarios">
+        <h3>Horarios del festival</h3>
+        <table>
+            <thead>
+                <tr><th colspan="4">PLANIFICACION DE SALAS</th></tr>
+                
+                <tr>
+                    <th>Horario</th> 
+                    
+                    <th scope="col">Sala de Ordenadores</th>
+                    <th scope="col">Sala de Consolas</th>
+                    <th scope="col">Sala de Pruebas VR</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">9:00 - 12:00</th>
+                    <td>Torneo de League of Legends (Fase de Grupos)</td>
+                    <td>Exhibición de PlayStation 6 y XBox Series X|X</td>
+                    <td>Sesión Abierta de VRChat</td>
+                </tr>
+                <tr>
+                    <th scope="row">12:00 - 14:00</th>
+                    <td>Prueba Abierta de Laptops Gaming 2026</td>
+                    <td>Lanzamiento Exclusivo de "Cyberpunk 2078"</td>
+                    <td>Taller de Creación de Contenido VR</td>
+                </tr>
+                <tr>
+                    <th scope="row">14:00 - 17:00</th>
+                    <td>Torneo de Valorant (Fase Final)</td>
+                    <td>Zona Retro: Competición de Super Mario Bros</td>
+                    <td>Exposición Consola de Realidad Virtual (VR)</td>
+                </tr>
+                <tr>
+                    <th scope="row">17:00 - 19:00</th>
+                    <td>Charla: El Futuro del Hardware Gaming</td>
+                    <td>Firma de Autógrafos con Streamers locales</td>
+                    <td>Experiencia de Vuelo Simulado en VR</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <br>
+    <section id="entradas">
+        <h3>Adquirir Entradas</h3>
+        <form action="/reservar_entrada" method="post">
+            <div class="formulario-grupo">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+            </div>
+            
+            <div class="formulario-grupo">
+                <label for="mail">Correo Electrónico:</label>
+                <input type="email" id="mail" name="mail" required placeholder="ejemplo@dominio.com">
+            </div>
+            
+            <div class="formulario-grupo">
+                <label for="numero_tlf">Número de Teléfono:</label>
+                <input type="tel" id="numero_tlf" name="numero_tlf" placeholder="Opcional">
+            </div>
+          
+            <div class="formulario-grupo">
+                <label for="tipo_entrada">Tipo de Entrada:</label>
+                <select id="tipo_entrada" name="tipo_entrada" required>
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="general">General (Día Completo) - 35$</option>
+                    <option value="tarde">Media Tarde (A partir de las 14:00) - 20$</option>
+                    <option value="vip">VIP (Acceso a todas las zonas + regalo) - 60$</option>
+                </select>
+            </div>
+            
+            <div>
+                <input type="submit" value="Comprar Entradas">
+            </div>
+        </form>
+    </section>
+    
+    <aside>
+        <h4>Eventos Destacados</h4>
+        <ul>
+            <li>Final del Torneo de Valorant a las 14:00h.</li>
+            <li>Lanzamiento mundial de "Cyberpunk 2078" (Exclusiva)</li>
+            <li>Charla de Desarrollo de Videojuegos VR (17:00h).</li>
+        </ul>
+        <h4>Enlaces Externos</h4>
+        <nav>
+            <ul>
+                <li><a href="https://twitter.com/E3" target="_blank">Twitter Oficial E3 Gaming</a></li>
+                <li><a href="https://www.instagram.com/e3expo/" target="_blank">Instagram del Evento</a></li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <footer id="contacto">
+        
+        <div>
+            <h4>Información Legal</h4>
+            <p> s 2025 E3 Gaming Los Santos. Todos los derechos reservados.</p>
+            <p>Aviso Legal | Política de Privacidad</p>
+            <p>Organizado por: Los Santos Events S.A.</p>
+            
+        </div>
+        
+        <div>
+            <h4>Contacto y Soporte</h4>
+            <p>Email: <a href="mailto:soporte@e3gamingls.com">soporte@e3gamingls.com</a></p>
+            <p>Teléfono: +1 (555) 123-4567</p>
+            <p>Dirección: Aeródromo de Sandy Shores, Blaine County.</p>
+            
+        </div>
+        
+        <div>
+            <h4>Ubicación del Evento</h4>
+            <p>Encuentra el lugar del evento en Google Maps.</p>
+            <a href="https://www.google.com/maps/search/Sandy+Shores+Aerodrome+GTA+V" target="_blank">
+                Ver Ubicación en Mapa
+            </a>
+            
+        </div>
+        
+    </footer>
+</body>
+</html>

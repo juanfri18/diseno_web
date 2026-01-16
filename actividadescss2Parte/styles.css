@@ -1,0 +1,100 @@
+/*EJERCICIO 1*/
+.caja {
+    background-color: #f0f0f0; 
+    padding: 20px 40px 10px 5px; 
+    margin: 50px; 
+    border: 3px solid #e74c3c; 
+    border-radius: 15px; 
+}
+/*EJERCICIO 2 */
+.caja1, .caja2 {
+    background-color: #3498db;
+    color: white;
+    margin-bottom: 20px;
+    width: 200px;
+    padding: 20px;
+    border: 10px solid #2980b9;
+}
+
+.caja1 {
+    box-sizing: border-box;
+}
+
+/* 5. EXPLICACIÓN 
+   La .caja1 mide 200px de ancho total porque 'border-box' incluye el padding
+   y el borde DENTRO del ancho definido.
+   La .caja2 mide 260px (200 + 40 padding + 20 borde) porque 'content-box' por defecto suma estos valores al ancho.
+*/
+
+
+
+/* EJERCICIO 3*/
+.bloque {
+    background-color: #2ecc71;
+    border: 2px solid #27ae60;
+    color: white;
+    padding: 10px;
+
+    width: 50%; 
+    height: 150px;
+    min-width: 300px; 
+    max-width: 800px;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+/*EJERCICIO 4*/
+.tarjeta {
+    width: 300px;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    margin: 50px auto;
+    background: conic-gradient(from 45deg, #8e44ad, #3498db, #8e44ad);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.tarjeta h2, .tarjeta p {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/*EJERCICIO 5*/
+.caja-transicion {
+    width: 150px;
+    height: 150px;
+    background-color: #e67e22;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s;
+}
+.caja-transicion:hover {
+    width: 300px;
+    background-color: #d35400;
+}
+
+/*EJERCICIO 6*/
+.animacion {
+    width: 100px;
+    height: 100px;
+    background-color: #9b59b6;
+    margin: 50px;
+    border-radius: 50%;
+    animation: moverYColor 4s linear 0s infinite alternate;
+}
+@keyframes moverYColor {
+    0% {
+        background-color: #9b59b6;
+        transform: translateX(0) scale(1);
+    }
+    50% {
+        transform: translateX(150px) scale(1.5);
+    }
+    100% {
+        background-color: #f1c40f;
+        transform: translateX(300px) scale(1);
+    }
+}
