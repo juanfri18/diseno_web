@@ -1,0 +1,32 @@
+
+nav {
+  background-color: #333; 
+  padding: 15px;
+
+  // 1.
+  ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    li {
+      
+      // 2.
+      & + li {
+        margin-left: 20px;
+      }
+
+      a {
+        text-decoration: none; 
+        color: white; 
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+
+        // 3
+        &:hover {
+          color: #f1c40f; 
+        }
+      }
+    }
+  }
+}

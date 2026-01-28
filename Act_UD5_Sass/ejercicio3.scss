@@ -1,0 +1,36 @@
+// 1
+@mixin box-shadow($x: 0, $y: 0, $blur: 5px, $color: rgba(0,0,0,0.3)) {
+  -webkit-box-shadow: $x $y $blur $color;
+  box-shadow: $x $y $blur $color;
+}
+
+// 2
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+.card {
+  border: 1px solid #ddd; 
+  background-color: #fff;
+  margin: 20px;
+  display: inline-block; 
+  padding: 20px;
+  text-align: center;
+}
+
+// 3
+.card-small {
+  @include sizes(150px, 150px);
+  @include box-shadow; 
+}
+
+.card-medium {
+  @include sizes(200px, 200px);
+  @include box-shadow(2px, 2px, 8px, rgba(0,0,0,0.5)); 
+}
+
+.card-large {
+  @include sizes(250px, 250px);
+  @include box-shadow(5px, 5px, 15px, rgba(0,0,0,0.8)); 
+}

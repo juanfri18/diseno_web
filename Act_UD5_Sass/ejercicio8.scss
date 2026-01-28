@@ -1,0 +1,145 @@
+$font-stack: 'Arial', sans-serif;
+$text-color: #333;
+$bg-light: #f4f4f4;
+
+$card-colors: (
+  "basic": #bdc3c7,
+  "premium": #f1c40f,
+  "vip": #9b59b6
+);
+
+$card-sizes: (
+  "small": 100px,
+  "medium": 150px,
+  "large": 200px
+);
+
+$alert-colors: (
+  "success": #2ecc71,
+  "error": #e74c3c
+);
+
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin btn-style($bg) {
+  background-color: $bg;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 5px;
+
+  &:hover {
+    background-color: darken($bg, 10%);
+  }
+}
+
+@mixin alert-box($type) {
+  background-color: map-get($alert-colors, $type);
+  color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+@mixin card-config($size-key, $color-key) {
+  height: map-get($card-sizes, $size-key);
+  background-color: map-get($card-colors, $color-key);
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+body {
+  font-family: $font-stack;
+  color: $text-color;
+  
+  &.light-theme {
+    background-color: $bg-light;
+  }
+}
+
+nav {
+  background-color: #333;
+  padding: 1rem;
+
+  ul {
+    @include list-reset;
+    display: flex;
+
+    li {
+      margin-right: 20px;
+
+      a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+          color: #f1c40f;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding: 20px;
+}
+
+.card {
+  display: inline-block;
+}
+
+.card-small { height: map-get($card-sizes, "small"); }
+.card-medium { height: map-get($card-sizes, "medium"); }
+.card-large { height: map-get($card-sizes, "large"); }
+
+.card-basic { 
+  background-color: map-get($card-colors, "basic"); 
+  @include card-config("small", "basic");
+}
+
+.card-premium { 
+  background-color: map-get($card-colors, "premium");
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.card-vip { 
+  background-color: map-get($card-colors, "vip");
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.btn-primary {
+  @include btn-style(#3498db);
+}
+
+.btn-success {
+  @include btn-style(#2ecc71);
+}
+
+.alert-success {
+  @include alert-box("success");
+}
+
+.alert-error {
+  @include alert-box("error");
+}

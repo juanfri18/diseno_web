@@ -1,0 +1,29 @@
+// 1
+$alert-colors: (
+  "success": #28a745,
+  "error": #dc3545,
+  "warning": #ffc107
+);
+
+// 2
+@mixin alert-style($type) {
+  background-color: map-get($alert-colors, $type);
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-family: sans-serif;
+}
+
+// 3
+.alert-success {
+  @include alert-style("success");
+}
+
+.alert-error {
+  @include alert-style("error");
+}
+
+.alert-warning {
+  @include alert-style("warning");
+}
