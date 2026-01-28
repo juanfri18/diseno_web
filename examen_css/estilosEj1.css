@@ -1,0 +1,19 @@
+*{
+    font-family:'Courier New', Courier, monospace;
+    font-size:medium;
+}
+.card {
+    width: 300px;
+    padding: 20px;
+    border: solid black 2px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.role{
+    font-style: oblique;
+    color: #3107ec;
+}

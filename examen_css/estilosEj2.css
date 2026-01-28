@@ -1,0 +1,14 @@
+.actions{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    justify-content:Space-evenly;
+    height: 60px;
+    background-color: black;
+    gap: 10px;
+}
+.item{
+    padding: 22px;
+    background-color: rgb(213, 213, 223);
+    vertical-align:middle;
+}

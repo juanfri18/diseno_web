@@ -1,0 +1,47 @@
+.dashboard{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 70px 1fr 50px;
+
+      /* Definimos las áreas del grid.
+         Sirve para "dibujar" el layout y
+         asignar nombres a las zonas */
+      grid-template-areas:
+        "header header"
+        "nav   main"
+        "footer footer";
+      gap: 15px;
+     
+      border: 2px solid #333;
+}
+header{
+    /* Asignamos este elemento al área "header" */
+      grid-area: header;
+
+      background: lightblue;
+
+      /* Centramos el contenido dentro de la celda */
+      display: grid;
+      place-items: center;
+}
+nav{
+    grid-area: nav;
+    align-items: start;
+    background: rgb(136, 136, 136);
+    place-items: center;
+
+}
+main{
+    grid-area: main;
+    align-items: end;
+    background: rgb(252, 0, 0);
+    place-items: center;
+
+}
+footer{
+    grid-area: footer;
+
+    background: rgb(55, 22, 116);
+    place-items: center;
+
+}
