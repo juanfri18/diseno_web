@@ -1,0 +1,29 @@
+.product-card {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #eee;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.product-card .price {
+  border: 1px solid #ddd;
+  font-size: 20px;
+  color: #198754;
+  padding: 10px;
+  margin: 15px 0;
+  display: inline-block;
+}
+.product-card .btn-primary {
+  background-color: #0d6efd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.product-card .btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+/*# sourceMappingURL=ej8.css.map */

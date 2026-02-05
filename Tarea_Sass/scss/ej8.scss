@@ -1,0 +1,43 @@
+@use "sass:map";
+
+$card-padding: 20px;
+$colors: (
+    "border": #ddd,
+    "price": #198754,
+    "btn-bg": #0d6efd,
+    "btn-hover": #0b5ed7
+);
+@mixin btn-primary {
+    background-color: map.get($colors, "btn-bg");
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    
+    &:hover {
+        background-color: map.get($colors, "btn-hover");
+    }
+}
+
+.product-card {
+    width: 300px;
+    padding: $card-padding;
+    border: 1px solid #eee;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    .price {
+        border: 1px solid map.get($colors, "border");
+        font-size: 20px;
+        color: map.get($colors, "price");
+        padding: 10px;
+        margin: 15px 0;
+        display: inline-block;
+    }
+
+    .btn-primary {
+        @include btn-primary;
+    }
+}

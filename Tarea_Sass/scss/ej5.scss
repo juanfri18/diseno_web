@@ -1,0 +1,21 @@
+$screen-width: 800px; 
+
+.dashboard {
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+
+    @if $screen-width >= 768px {
+        background-color: #e3f2fd; 
+        flex-direction: row;
+    } @else {
+        background-color: #fff3cd; 
+        flex-direction: column;
+    }
+}
+
+.panel {
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: white; 
+}

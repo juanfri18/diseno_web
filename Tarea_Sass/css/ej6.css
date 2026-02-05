@@ -1,0 +1,38 @@
+.row {
+  display: flex;
+  background-color: #eee;
+}
+
+.col-1 {
+  padding: 10px;
+  background-color: #0d6efd;
+  color: white;
+  text-align: center;
+  width: 25%;
+}
+
+.col-2 {
+  padding: 10px;
+  background-color: #0d6efd;
+  color: white;
+  text-align: center;
+  width: 50%;
+}
+
+.col-3 {
+  padding: 10px;
+  background-color: #0d6efd;
+  color: white;
+  text-align: center;
+  width: 75%;
+}
+
+.col-4 {
+  padding: 10px;
+  background-color: #0d6efd;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+/*# sourceMappingURL=ej6.css.map */

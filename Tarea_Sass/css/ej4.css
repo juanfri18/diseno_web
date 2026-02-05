@@ -1,0 +1,16 @@
+.form-control, .input-password, .input-text {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login {
+  width: 300px;
+  margin: 40px auto;
+}
+
+/*# sourceMappingURL=ej4.css.map */

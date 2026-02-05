@@ -1,0 +1,14 @@
+.row {
+    display: flex;
+    background-color: #eee;
+}
+
+@for $i from 1 through 4 {
+    .col-#{$i} {
+        padding: 10px;
+        background-color: #0d6efd;
+        color: white;
+        text-align: center;
+        width: 25% * $i;
+    }
+}
